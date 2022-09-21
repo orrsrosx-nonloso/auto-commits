@@ -47,7 +47,7 @@ Fork this project on GitHub
 
 Download your new copy of this project
 
-git clone https://github.com/<your-github-username>/commit-bot.git
+git@github.com:orrsrosx-nonloso/auto-commits.git
 Don't forget to include your username
 
 Test run the script
