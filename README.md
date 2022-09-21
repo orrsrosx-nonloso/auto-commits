@@ -1,77 +1,101 @@
-# auto-commits
-GitHub auto-commits
+# GitHub auto-commits
+
+
 Generate Organic™ GitHub activity
-My most insidious idea yet
+<br>_My most insidious idea yet_
+
+<br>
+
+<p align="center">
+  <img width="90%" src="./orrsrosx.png" alt="The Contribution Dream">
+</p>
 
 
-The Contribution Dream
-
+<br>
 
 Once a day (if my laptop is open),
-auto-commits adds today's line:
+<br>auto-commits adds today's line:
 
+```
 Commit: Wed Sep 25 22:00:00 EDT 2019
+```
+
 This is a Bash script
-designed to be run locally
-(i.e. on your machine)
+<br>designed to be run locally
+<br>(i.e. on _your_ machine)
 
+<br><br>
 
+> But [@theshteves](https://github.com/theshteves),
+> <br>I want this to run every day
 
-
-But @theshteves,
-I want this to run every day
-
-Oh hush
+_Oh hush_
 
 Nobody commits every day
-Is that what you want?
-🚫 Sorry, not today
+<br>Is that what you want?
+<br>🚫 Sorry, not today
 
 We're looking for a more realistic distribution of activity throughout the year
 
+<br><br>
 
+## Getting Started
 
-
-Getting Started
 If you're on Windows™,
-setup the Windows Subsystem for Linux
+<br>[setup the Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
 If you haven't already,
-install git
+<br>[install git](https://github.com/git-guides/install-git)
 
+<br>
 
-Open your command-line
-& navigate to whatever folder you prefer
+1. Open your command-line
+<br>& navigate to whatever folder you prefer
 
-Fork this project on GitHub
+2. [Fork this project](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo) on GitHub
 
-Download your new copy of this project
+2. Download your new copy of this project
 
-git@github.com:orrsrosx-nonloso/auto-commits.git
-Don't forget to include your username
+```shell
+git clone https://github.com/<your-github-username>auto-commits.git
+```
 
-Test run the script
-in case you need to fix permissions issues
-/bin/bash ./commit-bot/bot.sh
-Open your crontab to set a trigger
+**Don't forget to include your username**
+
+3. Test run the script
+<br>in case you need to fix permissions issues
+
+```shell
+/bin/bash ./auto-commits/bot.sh
+```
+
+4. [Open your crontab](https://www.howtogeek.com/101288/how-to-schedule-tasks-on-linux-an-introduction-to-crontab-files/) to set a trigger
+
+```shell
 crontab -e
-NOTE:
-If this makes your screen almost blank
-with no toolbar of keys to navigate,
-you've probably entered the text editor Vim
+```
 
-Remember, press "i" to start [i]nserting text
+> NOTE:
+> <br>If this makes your screen almost blank
+> <br>with no toolbar of keys to navigate,
+> <br>you've probably entered the text editor Vim
+> <br>
+> <br>Remember, press "i" to start [i]nserting text
+> <br>
+> <br>When you're finished,
+> <br>press "Esc" repeatedly until nothing happens
+> <br>
+> <br>Then type ":wq" to save & quit
+> <br>or ":q!" to quit without saving
 
-When you're finished,
-press "Esc" repeatedly until nothing happens
+5. Add this line to [schedule every 10pm or whenever](https://crontab.guru/#0_22_*_*_*)
 
-Then type ":wq" to save & quit
-or ":q!" to quit without saving
-
-Add this line to schedule every 10pm or whenever
+```shell
 0 22 * * * /bin/bash /<full-path-to-your-folder>/auto-commits/bot.sh
-Do not forget to include the correct folder path
+```
 
-NOTE:
-Make sure you save your changes
-on your way out!
+**Do not forget to include the correct folder path**
+
+> NOTE:
+> <br>Make sure you save your changes
+> <br>on your way out!
