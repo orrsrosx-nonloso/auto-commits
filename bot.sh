@@ -18,7 +18,7 @@
 info="Commit: $(date)"
 os="$(uname -s)"
 
-echo "commit-bot detects OS: $os"
+echo "auto-commit detects OS: $os"
 
 case $os in
 
