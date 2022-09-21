@@ -1,5 +1,5 @@
 # auto-commits
-GitHub Commit Bot
+GitHub auto-commits
 Generate Organic™ GitHub activity
 My most insidious idea yet
 
@@ -8,7 +8,7 @@ The Contribution Dream
 
 
 Once a day (if my laptop is open),
-commit-bot adds today's line:
+auto-commits adds today's line:
 
 Commit: Wed Sep 25 22:00:00 EDT 2019
 This is a Bash script
@@ -69,7 +69,7 @@ Then type ":wq" to save & quit
 or ":q!" to quit without saving
 
 Add this line to schedule every 10pm or whenever
-0 22 * * * /bin/bash /<full-path-to-your-folder>/commit-bot/bot.sh
+0 22 * * * /bin/bash /<full-path-to-your-folder>/auto-commits/bot.sh
 Do not forget to include the correct folder path
 
 NOTE:
