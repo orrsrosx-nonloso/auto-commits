@@ -7,8 +7,9 @@ Generate Organic™ GitHub activity
 <br>
 
 <p align="center">
-  <img width="90%" src="./the-dream.png" alt="The Contribution Dream">
+  <img width="90%" src="./orrsrosx.png" alt="The Contribution Dream">
 </p>
+
 
 <br>
 
