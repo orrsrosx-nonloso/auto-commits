@@ -1,8 +1,6 @@
 # GitHub auto-commits
 
 
-Generate Organic™ GitHub activity
-<br>_My most insidious idea yet_
 
 <br>
 
@@ -13,89 +11,84 @@ Generate Organic™ GitHub activity
 
 <br>
 
-Once a day (if my laptop is open),
-<br>auto-commits adds today's line:
+一个较为疯狂的想法,
+<br>auto-commits 每天自动提交微博早上10点与晚上10点的微博热点标题:
 
 ```
-Commit: Wed Sep 25 22:00:00 EDT 2019
+time:2022-09-22 10:09:50.339049
+Popular first:甘宇多处骨折并伴有严重感染
 ```
 
-This is a Bash script
-<br>designed to be run locally
-<br>(i.e. on _your_ machine)
+这是一个在linux服务器上服务器运行的脚本
 
 <br><br>
 
-> But [@theshteves](https://github.com/theshteves),
-> <br>I want this to run every day
+> But [@theshteves](https://github.com/orrsrosx-nonloso),
+> <br>此脚本每天都会运行
 
-_Oh hush_
 
-Nobody commits every day
-<br>Is that what you want?
-<br>🚫 Sorry, not today
 
-We're looking for a more realistic distribution of activity throughout the year
 
 <br><br>
 
 ## Getting Started
 
-If you're on Windows™,
-<br>[setup the Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+如果你想要在windows中使用,
+<br>[设置适用于 Linux 的 Windows 子系统](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
-If you haven't already,
-<br>[install git](https://github.com/git-guides/install-git)
+如果你还没有安装
+<br>[git](https://github.com/git-guides/install-git)
 
 <br>
 
-1. Open your command-line
-<br>& navigate to whatever folder you prefer
+1. 开启命令行
+<br>& 并导航到您喜欢的任何文件夹
 
-2. [Fork this project](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo) on GitHub
+2. [Fork this project](https://github.com/orrsrosx-nonloso/auto-commits) on GitHub
+  可以顺手给我一个star
 
-2. Download your new copy of this project
+2. 下载此项目的新副本
 
 ```shell
 git clone https://github.com/<your-github-username>auto-commits.git
 ```
 
-**Don't forget to include your username**
+**不要忘记包含你的用户名**
 
-3. Test run the script
-<br>in case you need to fix permissions issues
+3. 测试运行脚本
+<br>以防您需要修复权限问题
 
 ```shell
 /bin/bash ./auto-commits/bot.sh
 ```
 
-4. [Open your crontab](https://www.howtogeek.com/101288/how-to-schedule-tasks-on-linux-an-introduction-to-crontab-files/) to set a trigger
+4. 打开您的 crontab以设置定时触发器
 
 ```shell
 crontab -e
 ```
 
 > NOTE:
-> <br>If this makes your screen almost blank
-> <br>with no toolbar of keys to navigate,
-> <br>you've probably entered the text editor Vim
-> <br>
-> <br>Remember, press "i" to start [i]nserting text
-> <br>
-> <br>When you're finished,
-> <br>press "Esc" repeatedly until nothing happens
-> <br>
-> <br>Then type ":wq" to save & quit
-> <br>or ":q!" to quit without saving
+> <br>注意：
+> <br>如果这使你的屏幕几乎是空白
+> <br>的，没有工具栏可以导航，
+> <br>你可能已经进入了文本编辑器 Vim
 
-5. Add this line to [schedule every 10pm or whenever](https://crontab.guru/#0_22_*_*_*)
+> <br>记住，按“i”开始[i]插入文本
+
+> <br>当你完成后，
+> <br>重复按“Esc”直到什么都没有发生
+
+> <br>然后输入 ":wq" 保存并退出
+> <br>或 ":q!" 不保存就退出
+
+5. [添加此行以安排每晚上 10 点或任何时间](https://crontab.guru/#0_22_*_*_*)
 
 ```shell
 0 22 * * * /bin/bash /<full-path-to-your-folder>/auto-commits/bot.sh
 ```
 
-**Do not forget to include the correct folder path**
+**不要忘记包含正确的文件夹路径**
 
 > NOTE:
-> <br>Make sure you save your changes
-> <br>on your way out!
+> <br>确保在退出时保存更改
