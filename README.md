@@ -23,7 +23,7 @@ Popular first:甘宇多处骨折并伴有严重感染
 
 <br><br>
 
-> But [@theshteves](https://github.com/orrsrosx-nonloso),
+> But [@orrsrosx-nonloso](https://github.com/orrsrosx-nonloso),
 > <br>此脚本每天都会运行
 
 
@@ -36,7 +36,7 @@ Popular first:甘宇多处骨折并伴有严重感染
 如果你想要在windows中使用,
 <br>[设置适用于 Linux 的 Windows 子系统](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
-如果你还没有安装
+如果你还没有安装git,点击安装
 <br>[git](https://github.com/git-guides/install-git)
 
 <br>
@@ -70,8 +70,7 @@ crontab -e
 
 > NOTE:
 > <br>注意：
-> <br>如果这使你的屏幕几乎是空白
-> <br>的，没有工具栏可以导航，
+> <br>如果这使你的屏幕几乎是空白的，没有工具栏可以导航，
 > <br>你可能已经进入了文本编辑器 Vim
 
 > <br>记住，按“i”开始[i]插入文本
