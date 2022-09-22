@@ -15,6 +15,10 @@
 #
 # ...c'mon, nobody commits EVERY day ;)
 #
+
+#提前执行pyhton文件
+python getWeiboHotData.py
+python indexcreate.py
 info="Commit: $(date)"
 os="$(uname -s)"
 
@@ -45,6 +49,8 @@ echo
 
 # Ship it
 git add output.txt
+git add hot.json
+git add index.html
 git commit -m "$info"
 git push origin main # or "master" on old setups
 
