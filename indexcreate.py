@@ -33,7 +33,6 @@ message = """
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>demo</title>
 </head>
-<script type="text/javascript" src="vue.js"></script>
 
 <body>
     <div id="box">
@@ -54,24 +53,6 @@ message3 = """
     </div>
 </body>
 <script type="text/javascript">
-    var box = new Vue({
-        el: "#box",
-        data: {
-            persons: [{
-                    onboard_time: "01",
-                    word: "张飞",
-                },
-                {
-                    onboard_time: "02",
-                    word: "刘备",
-                },
-                {
-                    onboard_time: "03",
-                    word: "吕布",
-                }
-            ],
-        }
-    })
 </script>
 <style>
 </style>
