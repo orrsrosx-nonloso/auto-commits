@@ -51,7 +51,7 @@ echo
 git add output.txt
 git add hot.json
 git add index.html
-git commit -m "$info"
+git commit -m "#docs&style: weibo hot mes get$info"
 git push origin main # or "master" on old setups
 
 cd -
