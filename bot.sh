@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 #
-# Commit Bot by Steven Kneiser
+#Auto Commits  by orrsrosx
 #
-# > https://github.com/theshteves/commit-bot
+# > https://github.com/orrsrosx/auto-commits
 #
 # Deploy locally by adding the following line to your crontab:
-# 0 22 * * * /bin/bash /<full-path-to-your-folder>/code/commit-bot/bot.sh
+# 0 22 * * * /bin/bash /<full-path-to-your-folder>/code/auto-commits/bot.sh
 #
 # Edit your crontab in vim w/ the simple command:
 # crontab -e
@@ -17,9 +17,11 @@
 #
 
 #提前执行pyhton文件
-python getWeiboHotData.py
-python indexcreate.py
-info="Commit: $(date)"
+cd auto-commits
+python3 getWeiboHotData.py
+python3 indexcreate.py
+cd
+info="#docs&style: weibo hot mes getCommit: $(date)"
 os="$(uname -s)"
 
 echo "auto-commit detects OS: $os"
@@ -51,7 +53,7 @@ echo
 git add output.txt
 git add hot.json
 git add index.html
-git commit -m "#docs&style: weibo hot mes get$info"
+git commit -m "$info"
 git push origin main # or "master" on old setups
 
 cd -
